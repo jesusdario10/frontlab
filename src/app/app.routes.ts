@@ -6,16 +6,8 @@ import { PagesComponent } from './components/pages/pages.component';
 
 
 const appRoutes : Routes = [
-    {path:'',
-     component: PagesComponent,
-     children:[
-         {path:'dashboard', component: DashboardComponent},
-         {path:'', redirectTo:'/dashboard', pathMatch:'full'}
-     ]
-    
-    },
     {path:'login', component: LoginComponent},
     {path:'**', component: PagenofoundComponent},
     
 ];
-export const APP_ROUTES = RouterModule.forRoot(appRoutes, {useHash:true});
+    export const APP_ROUTES = RouterModule.forRoot(appRoutes, {useHash:true});
