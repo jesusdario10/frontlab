@@ -14,14 +14,15 @@ const pagesRoutes : Routes = [
         path: '',
         component : PagesComponent,
         children:[
-            {path:'dashboard', component:DashboardComponent},
-            {path:'equipos', component:EquipoComponent},
-            {path:'patrones', component:PatronComponent},
-            {path:'leyendOperation', component:LeyendOperationComponent},
-            {path:'reception', component:ReceptionComponent},
-            {path:'order', component:OrderComponent},
-            {path:'delivery', component:DeliveryComponent},
-            {path:'certificate', component:CertificateComponent},
+            {path:'dashboard', component:DashboardComponent, data :{title:'Dashboard'}},
+            {path:'equipos', component:EquipoComponent, data :{title:'Machine'}},
+            {path:'patrones', component:PatronComponent, data :{title:'Patter'}},
+            {path:'leyendOperation', component:LeyendOperationComponent, data :{title:'Leyend'}},
+            {path:'reception', component:ReceptionComponent, data :{title:'Reception'}},
+            {path:'order', component:OrderComponent, data :{title:'Order'}},
+            {path:'delivery', component:DeliveryComponent, data :{title:'Delivery'}},
+            {path:'certificate', component:CertificateComponent, data :{title:'Certificate'}},
+            {path:'', redirectTo:'/dashboard', pathMatch:'full'}
         ]
     }
 ]

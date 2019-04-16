@@ -12,8 +12,8 @@ export class SidebarService {
       icono: "mdi mdi-calculator",
       submenu:[
         { titulo:"Dasboard", url:"/dashboard" },
-        { titulo:"Equipos", url:"/equipos" },
-        { titulo:"Patrones", url:"/patrones" }
+        { titulo:"Machine", url:"/equipos" },
+        { titulo:"Pattern", url:"/patrones" }
       ]
     },
     {
