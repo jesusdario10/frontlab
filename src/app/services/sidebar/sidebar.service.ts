@@ -8,15 +8,26 @@ export class SidebarService {
  
   menu : any = [
     {
-      titulo: "Equipos",
-      icono: "mdi mdi-gauge",
+      titulo: "Device",
+      icono: "mdi mdi-calculator",
       submenu:[
         { titulo:"Dasboard", url:"/dashboard" },
-        { titulo:"Equipos", url:"/reception" },
-        { titulo:"Grafica1", url:"/graficas1" },
-        { titulo:"Grafica2", url:"/graficas2" }
+        { titulo:"Equipos", url:"/equipos" },
+        { titulo:"Patrones", url:"/patrones" }
       ]
-    }
+    },
+    {
+      titulo: "Operation",
+      icono: "mdi mdi-owl",
+      submenu:[
+        { titulo:"Leyend", url:"/leyendOperation" },
+        { titulo:"Reception", url:"/reception" },
+        { titulo:"Order", url:"/order" },
+        { titulo:"Delivery", url:"/delivery" },
+        { titulo:"Certificate", url:"/certificate" },
+      ]
+    },
+
   ];
 
   constructor() { }
