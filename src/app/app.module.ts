@@ -2,14 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { HeaderComponent } from './components/header/header.component';
-import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { SidebarComponent } from './components/frontstructure/sidebar/sidebar.component';
+import { HeaderComponent } from './components/frontstructure/header/header.component';
+import { BreadcrumbsComponent } from './components/frontstructure/breadcrumbs/breadcrumbs.component';
 import { PagenofoundComponent } from './components/pagenofound/pagenofound.component';
 import { APP_ROUTES } from './app.routes';
+import { PagesComponent } from './components/pages/pages.component';
 
 
 @NgModule({
@@ -17,11 +17,12 @@ import { APP_ROUTES } from './app.routes';
     AppComponent,
     DashboardComponent,
     LoginComponent,
-    NavbarComponent,
+    
     SidebarComponent,
     HeaderComponent,
     BreadcrumbsComponent,
     PagenofoundComponent,
+    PagesComponent,
     
   ],
   imports: [
