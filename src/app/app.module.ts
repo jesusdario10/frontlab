@@ -7,6 +7,10 @@ import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { PagenofoundComponent } from './components/pagenofound/pagenofound.component';
+import { APP_ROUTES } from './app.routes';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +19,14 @@ import { HeaderComponent } from './components/header/header.component';
     LoginComponent,
     NavbarComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    BreadcrumbsComponent,
+    PagenofoundComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]
