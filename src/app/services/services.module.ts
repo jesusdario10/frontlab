@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarService, UserService } from './services.index';
+import { SidebarService, UserService, UserGuard } from './services.index';
 
 @NgModule({
   declarations: [],
@@ -9,7 +9,8 @@ import { SidebarService, UserService } from './services.index';
   ], 
   providers:[
     SidebarService,
-    UserService
+    UserService,
+    UserGuard
   ]
 })
 export class ServicesModule { }

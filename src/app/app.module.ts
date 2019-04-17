@@ -10,8 +10,7 @@ import { ServicesModule } from './services/services.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { PagenofoundComponent } from './components/pagenofound/pagenofound.component';
-
-
+import { UserGuard, UserService } from './services/services.index';
 
 
 @NgModule({
@@ -30,7 +29,11 @@ import { PagenofoundComponent } from './components/pagenofound/pagenofound.compo
     HttpClientModule
 
   ],
-  providers: [],
+  providers: [
+    UserService,
+    UserGuard
+
+            ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

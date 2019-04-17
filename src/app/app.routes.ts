@@ -5,7 +5,7 @@ import { PagenofoundComponent } from './components/pagenofound/pagenofound.compo
 
 const appRoutes : Routes = [
     {path:'login', component: LoginComponent},
-    {path:'**', component: PagenofoundComponent},
+    {path:'**', component: LoginComponent},
     
 ];
-    export const APP_ROUTES = RouterModule.forRoot(appRoutes, {useHash:true});
+export const APP_ROUTES = RouterModule.forRoot(appRoutes, {useHash:true});
