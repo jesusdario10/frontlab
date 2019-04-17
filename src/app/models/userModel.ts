@@ -9,6 +9,7 @@ export class UserModel{
         public role?:    string,
         public estado? : string, 
         public tercero? : string,
+        public gettoken?: string,
         public _id? : string
     ){}
 }
