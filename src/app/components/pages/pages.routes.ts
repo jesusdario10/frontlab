@@ -9,6 +9,7 @@ import { OrderComponent } from './order/order.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { UserGuard } from 'src/app/services/services.index';
+import { ReceptionListComponent } from './reception-list/reception-list.component';
 
 const pagesRoutes : Routes = [
     {
@@ -19,7 +20,7 @@ const pagesRoutes : Routes = [
             {path:'equipos', component:EquipoComponent, data :{title:'Machine'}, canActivate : [UserGuard]},
             {path:'patrones', component:PatronComponent, data :{title:'Patter'}, canActivate : [UserGuard]},
             {path:'leyendOperation', component:LeyendOperationComponent, data :{title:'Leyend'}, canActivate : [UserGuard]},
-            {path:'reception', component:ReceptionComponent, data :{title:'Reception'}, canActivate : [UserGuard]},
+            {path:'reception-list', component:ReceptionListComponent, data :{title:'Reception List'}, canActivate : [UserGuard]},
             {path:'order', component:OrderComponent, data :{title:'Order'}, canActivate : [UserGuard]},
             {path:'delivery', component:DeliveryComponent, data :{title:'Delivery'}, canActivate : [UserGuard]},
             {path:'certificate', component:CertificateComponent, data :{title:'Certificate'}, canActivate : [UserGuard]},

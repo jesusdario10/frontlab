@@ -21,7 +21,7 @@ export class SidebarService {
       icono: "mdi mdi-owl",
       submenu:[
         { titulo:"Leyend", url:"/leyendOperation" },
-        { titulo:"Reception", url:"/reception" },
+        { titulo:"Reception", url:"/reception-list" },
         { titulo:"Order", url:"/order" },
         { titulo:"Delivery", url:"/delivery" },
         { titulo:"Certificate", url:"/certificate" },

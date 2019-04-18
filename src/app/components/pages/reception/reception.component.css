@@ -1,6 +1,9 @@
-.card-tittle h2{
+.client-title h2{
     font-family: 'Acme', sans-serif !important;
     text-align: center
+}
+.cliente{
+    border: 1px solid #373737;
 }
 .infocliente h3{
     font-family: 'Acme', sans-serif !important;
@@ -8,4 +11,13 @@
 }
 .centrado{
     text-align: center !important;
+}
+.infoequipo h2{
+    font-family: 'Acme', sans-serif !important;
+    text-align: center;
+    color: #FF5733 !important;
+}
+.letraequipo{
+    color: #FF5733 !important;
+    border: 1px solid #FF5733;
 }

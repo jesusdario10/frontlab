@@ -12,6 +12,7 @@ import { ReceptionComponent } from './reception/reception.component';
 import { OrderComponent } from './order/order.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { CertificateComponent } from './certificate/certificate.component';
+import { ReceptionListComponent } from './reception-list/reception-list.component';
 
 
 
@@ -26,6 +27,7 @@ import { CertificateComponent } from './certificate/certificate.component';
         OrderComponent,
         DeliveryComponent,
         CertificateComponent,
+        ReceptionListComponent,
         
     ],
     exports:[
