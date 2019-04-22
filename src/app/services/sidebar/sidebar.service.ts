@@ -18,13 +18,21 @@ export class SidebarService {
     },
     {
       titulo: "Operation",
-      icono: "mdi mdi-owl",
+      icono: "mdi mdi-fan",
       submenu:[
         { titulo:"Leyend", url:"/leyendOperation" },
         { titulo:"Reception", url:"/reception-list" },
         { titulo:"Order", url:"/order" },
         { titulo:"Delivery", url:"/delivery" },
         { titulo:"Certificate", url:"/certificate" },
+      ]
+    },
+    {
+      titulo: "Configuration",
+      icono: "mdi mdi-vector-square",
+      submenu:[
+        { titulo:"Customers", url:"/reception-list" },
+        { titulo:"Users", url:"/order" },
       ]
     },
 

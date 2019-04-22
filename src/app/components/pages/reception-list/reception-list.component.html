@@ -3,11 +3,34 @@
     <div class="card">
       <div class="row centrado">
         <div class="col-12">
-          <h2>Crear Recepcion</h2>
+          <h2 class="texto">Crear Recepcion</h2>
         </div>
-        <div class="col 12 align-button">
-            <button type="button" class="btn btn-info btn-circle btn-xl"><i class="fa fa-check"></i> </button>
+        <div class="col 12">
+          <div class="row padding-row">
+            <div class="col-4">
+              <h4 class="texto">Rejected</h4>
+                <button type="button" class="btn btn-danger btn-circle btn-xl"><i class="fa fa-thumbs-o-down"></i> </button>
+            </div>
+            <div class="col-4">
+                <h4 class="texto">Create</h4>
+                  <button type="button" [routerLink]="['/reception']" class="btn btn-info btn-circle btn-xl"><i class="fa fa-plus"></i> </button>
+            </div>
+            <div class="col-4">
+                <h4 class="texto">Accepted</h4>
+                  <button type="button"  class="btn btn-success btn-circle btn-xl"><i class="fa fa-thumbs-o-up"></i> </button>
+            </div>      
+          </div> 
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        sadfsafds
       </div>
     </div>
   </div>

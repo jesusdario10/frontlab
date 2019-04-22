@@ -1,0 +1,22 @@
+.device-title h2{
+    font-family: 'Acme', sans-serif !important;
+    text-align: center
+}
+.generalBorder{
+    border: 1px solid #373737;
+}
+.characteristics{
+    border: 1px solid #69C8FB;
+}
+.colorcharacts{
+    color: #69C8FB;
+}
+.anexos{
+    border: 1px solid #FA9E66;
+}
+.colorcanexos{
+    color : #FA9E66;
+}
+.centrado{
+    text-align: center;
+}

@@ -8,6 +8,7 @@ export class EquipoModel{
         public tipo_equipo?: string,
         public fabricante? : string,
         public ubicacion? : string,
+        public dimenciones? : string,
         public estado?: string,
         public tipo_indicacion?: string,
         public intervalo_indicacion?: string,

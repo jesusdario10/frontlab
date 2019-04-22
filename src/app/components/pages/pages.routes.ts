@@ -10,6 +10,7 @@ import { DeliveryComponent } from './delivery/delivery.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { UserGuard } from 'src/app/services/services.index';
 import { ReceptionListComponent } from './reception-list/reception-list.component';
+import { LocationComponent } from './location/location.component';
 
 const pagesRoutes : Routes = [
     {
@@ -21,9 +22,11 @@ const pagesRoutes : Routes = [
             {path:'patrones', component:PatronComponent, data :{title:'Patter'}, canActivate : [UserGuard]},
             {path:'leyendOperation', component:LeyendOperationComponent, data :{title:'Leyend'}, canActivate : [UserGuard]},
             {path:'reception-list', component:ReceptionListComponent, data :{title:'Reception List'}, canActivate : [UserGuard]},
+            {path:'reception', component:ReceptionComponent, data :{title:'Reception'}, canActivate : [UserGuard]},
             {path:'order', component:OrderComponent, data :{title:'Order'}, canActivate : [UserGuard]},
             {path:'delivery', component:DeliveryComponent, data :{title:'Delivery'}, canActivate : [UserGuard]},
             {path:'certificate', component:CertificateComponent, data :{title:'Certificate'}, canActivate : [UserGuard]},
+            {path:'location', component:LocationComponent, data :{title:'Location'}, canActivate : [UserGuard]},
             {path:'', redirectTo:'/dashboard', pathMatch:'full', canActivate : [UserGuard]}
         ]
     }

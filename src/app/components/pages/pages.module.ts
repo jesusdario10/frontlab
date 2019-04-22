@@ -13,6 +13,10 @@ import { OrderComponent } from './order/order.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { ReceptionListComponent } from './reception-list/reception-list.component';
+import { LocationComponent } from './location/location.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -28,6 +32,7 @@ import { ReceptionListComponent } from './reception-list/reception-list.componen
         DeliveryComponent,
         CertificateComponent,
         ReceptionListComponent,
+        LocationComponent,
         
     ],
     exports:[
@@ -39,6 +44,9 @@ import { ReceptionListComponent } from './reception-list/reception-list.componen
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
+        BrowserModule,
+        CommonModule,
+        NgSelectModule
     ]
 })
 export class PageModule{}

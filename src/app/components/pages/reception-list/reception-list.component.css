@@ -1,7 +1,9 @@
 .centrado{
     text-align: center !important;
 }
-.align-button{
-    margin: 5px;
-    padding: 5px;
+.padding-row{
+    padding: 1vh;
+}
+.texto{
+    font-family: 'Acme', sans-serif !important;
 }

@@ -1,3 +1,125 @@
-<p>
-  equipo works!
-</p>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+
+      <div class="card-body">
+        <form  ngNativeValidate [formGroup]="form"  #MachineForm="ngForm" (ngSubmit)="createMachine(form, MachineForm)">
+          <div class="row generalBorder">
+            <div class="col-12 device-title">     
+              <h2>General Information</h2>
+            </div>
+
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="tag"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Tag</strong></font></font></label>
+                  <input formControlName="tag"  type="text" class="form-control" id="tag" placeholder="tag" required>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="tipo_equipo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Tipo</strong></font></font></label>
+                  <input formControlName="tipo_equipo"  type="text" class="form-control" id="tipo_equipo" placeholder="tipo de equipo" >
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="fabricante"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Fabricante</strong></font></font></label>
+                  <input  type="text" formControlName="fabricante" class="form-control" id="fabricante" placeholder="fabricante" >
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="modelo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Modelo</strong></font></font></label>
+                  <input  type="text" formControlName="modelo" class="form-control" id="modelo" placeholder="modelo" >
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="serial"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Serial</strong></font></font></label>
+                  <input  type="text" formControlName="serial" class="form-control" id="serial" placeholder="serial" >
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="marca"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Marca</strong></font></font></label>
+                  <input  type="text" formControlName="marca" class="form-control" id="marca" placeholder="marca" >
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="ubicacion"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Ubicacion</strong></font></font></label>
+                  <ng-select     
+                    [items]="ubicaciones"
+                    bindLabel="nombre"
+                    placeholder="Select Ubicacion"
+                    formControlName="ubicacion"
+                    [(ngModel)]="selectedUbicacion">    
+                  </ng-select>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="dimenciones"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Dimenciones</strong></font></font></label>
+                  <input  type="text" formControlName="dimenciones" class="form-control" id="dimenciones" placeholder="dimenciones" >
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="estado"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Estado</strong></font></font></label>
+                  <input  type="text" formControlName="estado" class="form-control" id="estado" placeholder="estado" >
+                </div>
+            </div>
+          </div>
+          <br>
+          <div class="row characteristics colorcharacts">
+            <div class="col-12 device-title">
+              <h2 class="colorcharacts" >Metrological Characteristics</h2>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="tipo_indicacion"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Tipo Indicacion</strong></font></font></label>
+                  <input  type="text" formControlName="tipo_indicacion" class="form-control" id="tipo_indicacion" placeholder="tipo de indicacion" >
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="intervalo_indicacion"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Intervalo Indicacion</strong></font></font></label>
+                  <input  type="text" formControlName="intervalo_indicacion" class="form-control" id="intervalo_indicacion" placeholder="intervalo de indicacion" >
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label for="resolucion"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Resolucion</strong></font></font></label>
+                  <input  type="text" formControlName="resolucion" class="form-control" id="resolucion" placeholder="resolucion" >
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-1">
+                <div class="form-group centrado">
+                  <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Error Max Permitido</strong></font></font></label>
+                  <p>EMP=(Vmax.int X U.ef%)</p>
+                </div>
+            </div>
+          </div>
+          <br>
+          <div class="row anexos colorcanexos">
+              <div class="col-12 device-title">
+                <h2 class="colorcanexos" >Annexes and customers</h2>
+              </div>
+              <div class="col-md-12 col-sm-1">
+                  <div class="form-group centrado">
+                    <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Equipos</strong></font></font></label>
+                    <input  type="text" formControlName="anexos" class="form-control" id="anexos" placeholder="equipos anexos" >
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <br>
+                <button type="submit" class="btn btn-block btn-success waves-effect waves-light m-r-10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Enviar</font></font></button>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

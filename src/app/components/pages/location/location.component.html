@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <form ngNativeValidate [formGroup]="form"  #LocationForm="ngForm" (ngSubmit)="createLocation(form, LocationForm)">
+          <div class="row">
+            <div class="col-md-12 client-title">
+              <h2>Create locations</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group centrado">
+                  <label for="codigo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>codigo</strong></font></font></label>
+                  <input formControlName="codigo" required type="text" class="form-control" id="codigo" placeholder="codigo" required>
+                </div>
+              </div>
+            <div class="col-md-6">
+              <div class="form-group centrado">
+                <label for="nombre"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>Nombre</strong></font></font></label>
+                <input formControlName="nombre" required type="text" class="form-control" id="nombre" placeholder="nombre" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+                  <br>
+                  <button type="submit" class="btn btn-block btn-success waves-effect waves-light m-r-10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Enviar</font></font></button>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr >
+              <th>Codigo</th>
+              <th>Nombre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor = "let location of locations ; let i = index">
+              <td>{{location.codigo}}</td>
+              <td>{{location.nombre}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
